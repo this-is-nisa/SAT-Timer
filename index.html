@@ -12,9 +12,13 @@
 
 <div class="timer"> 
 
-<input id="hour" class="time" max="99" min=""> <p class="colon">:</p><input id="minutes" class="time" max="60" min="0"><p class="colon">:</p><input id="seconds" class="time" max="60" min="0">
-<button id="startBtn" class="controls">Start</button>
-<button id="resetBtn" class="controls">Reset</button>
+<span class="timer-part" id="timer-part-hr"><input id="hour" class="time" max="99" min=""></span> 
+<span class="timer-part"><p class="colon">:</p></span> 
+<span class="timer-part" id="timer-part-min"><input id="minutes" class="time" max="60" min="0">
+
+<span class="timer-part" id="timer-part-sec"><input id="seconds" class="time" max="60" min="0"></span>
+<button id="startBtn" class="controls"><span class="material-icons">play_arrow</span></button>
+<button id="resetBtn" class="controls"><span class="material-icons">restart_alt</span></button>
 </div>
 <script src='main.js'></script>
 
