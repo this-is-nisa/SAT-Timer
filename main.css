@@ -17,6 +17,16 @@ body {
 .timer-part {
 	font-size: 36px;
 	font-weight: bold;
+	margin: 0;
+}
+
+.time {
+	justify-self: center;
+	align-self: center;
+	font-size: 50px;
+	textarea:focus{
+       outline: none;
+    }
 }
 
 .timer-btn {
