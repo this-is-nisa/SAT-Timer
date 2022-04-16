@@ -28,6 +28,7 @@ if(hr.value == 0 && min.value == 0 && sec.value == 0) {
 } else if(sec.value != 0) {
 	sec.value--;
 }
+return;
 }
 function stopTimer(){
 	clearInterval(startTimer);
