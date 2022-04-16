@@ -7,7 +7,18 @@ var sec = document.getElementById('seconds');
 
 
 
+
 var startTimer = null;
+
+startBtn.addEventListener('click', function(){
+    //initialize the variable
+    function startInterval(){
+        startTimer = setInterval(function() {
+            timer();
+        }, 1000);
+    }
+    startInterval();
+})
 
 function timer(){
 if(hr.value == 0 && min.value == 0 && sec.value == 0) {
@@ -22,15 +33,10 @@ function stopTimer(){
 	clearInterval(startTimer);
 }
 
+// addEventListener and 'click' will make the button do smth
+ // we are also defining the function inside the event listener
 
 
-startBtn.addEventListener('click', function() {   // addEventListener and 'click' will make the button do smth
-function startInterval(){
-	startTimer = setInterval(funtion() {
-		timer();
-	}, 1000); 
-}                                         // we are also defining the function inside the event listener
-})   
 	 
 resetBtn.addEventListener('click', function() { 
 	hr.value = 0;
