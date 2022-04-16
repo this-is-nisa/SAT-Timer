@@ -30,7 +30,7 @@ function startInterval(){
 		timer();
 	}, 1000); 
 }                                         // we are also defining the function inside the event listener
-}   
+})   
 	 
 resetBtn.addEventListener('click', function() { 
 	hr.value = 0;
