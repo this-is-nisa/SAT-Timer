@@ -102,11 +102,27 @@ if(hr.value == 0 && min.value == 0 && sec.value == 0) {
 	hr.value = 0;
 	min.value = 0;
 	sec.value = 0;
-	}else if(sec.value != 0) {
+}else if ((min.value > 60) && (sec.value > 60)) {
+	hr.value = Math.floor(min.value / 60);
+	min.value = Math.floor(min.value % 60);
+	min.value = Math.floor(sec.value / 60);
+	sec.value = Math.floor(sec.value % 60);
+	
+} else if (min.value > 60){  // makes min not go over 60
+	hr.value = Math.floor(min.value / 60); // math.floor round to lowest // divide by 60 bc [hr*60 = min] , so get hr by itself [hr = min/60]
+	min.value = Math.floor(min.value % 60); // the min will be the remainder of [min/60]
+	
+} else if (sec.value > 60){
+	min.value = Math.floor(sec.value / 60); // [min*60 = sec] --> [min = sec/60]
+	sec.value = Math.floor(sec.value % 60); // remainder of [sec/60]
+	
+}else if(sec.value != 0) {
 	sec.value--;
-} else if(min.value != 0 && sec.value == 0){
+	
+}else if(min.value != 0 && sec.value == 0){
         sec.value = 59;
         min.value--;
+		
 }else if(hr.value != 0 && min.value == 0 && sec.value == 0){
         min.value = 59;
 		sec.value = 59;
