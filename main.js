@@ -6,7 +6,7 @@ var hr = document.getElementById('hours');
 var min = document.getElementById('minutes');
 var sec = document.getElementById('seconds');
 
-var fiveMin = document.getElementById('five');
+var fiveMin = document.getElementById('fiveMin');
 
 var startTimer = null; // gotta have this var to later hold the set interval
 
@@ -17,10 +17,11 @@ startBtn.addEventListener('click', function(){ // addEventListener and 'click' w
     function startInterval(){         // defining the button function inside the event listener
         startTimer = setInterval(function() { // setInterval repeats a function with a fixed time delay (1000)
             timer(); // setinterval is repeating the timer function over and over at 1000
+			fiveMinRem();
         }, 1000);
     }
     startInterval(); // calling function
-	
+
 })
 
 
@@ -38,10 +39,14 @@ resetBtn.addEventListener('click', function() {
 
 })
 
+function fiveMinRem() { 
 if (fiveMin.checked && hr.value == 0 && min.value == 5 && sec.value == 0) {
 		alert("You have 5 minutes remaining.");
 console.log("it worked"); }
-
+return;
+ }
+ 
+ 
 //Timer function
 function timer(){  // what is being repeated
 if(hr.value == 0 && min.value == 0 && sec.value == 0) {
