@@ -38,7 +38,7 @@ resetBtn.addEventListener('click', function() {
 	stopInterval()
 
 })
-var audio = new Audio('audio_file.mp3');
+var audio = new Audio('Five-Minutes-Remaining-audio-clip.mp3');
 function fiveMinRem() { 
 if (fiveMin.checked && hr.value == 0 && min.value == 5 && sec.value == 0) {
 
