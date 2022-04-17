@@ -58,8 +58,9 @@ if(hr.value == 0 && min.value == 0 && sec.value == 0) {
 } else if(min.value != 0 && sec.value == 0){
         sec.value = 59;
         min.value--;
-}else if(hr.value != 0 && min.value == 0){
-        min.value = 60;
+}else if(hr.value != 0 && min.value == 0 && sec.value == 0){
+        min.value = 59;
+		sec.value = 59;
         hr.value--;
 } 
 return;
