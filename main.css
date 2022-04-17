@@ -9,9 +9,19 @@ body {
 	font-family: sans:serif;
 	display: inline-block;
 	padding: 24px 32px;
-	
 	border-radius: 30px;
 	background: #eeeeee;
+	float: left;
+}
+
+.extra-funcs {
+	font-family: sans:serif;
+	display: inline-block;
+	padding: 24px 32px;
+	margin-left: 50px;
+	border-radius: 30px;
+	background: #eeeeee;
+	clear:both;
 }
 
 .timer-part {
@@ -64,6 +74,17 @@ body {
 	background: #0088C2;
 }
 
+#pauseBtn {
+	width: 50px;
+	height: 50px;
+	margin-left: 16px;
+	border-radius: 50%;
+	align-self: center;
+	border: none;
+	color: white;
+	background: #C20000;
+}
+
 #startBtn:hover {
 	width: 50px;
 	height: 50px;
@@ -73,6 +94,16 @@ body {
 	color: white;
 	background: hsl(120, 91%, 30%);
 }
+
+#pauseBtn:hover {
+	width: 50px;
+	height: 50px;
+	margin-left: 16px;
+	border-radius: 50%;
+	align-self: center;
+	border: none;
+	color: white;
+	background: hsl(0, 100%, 30%); }
 	
 #resetBtn:hover {
 	width: 50px;
@@ -83,3 +114,4 @@ body {
 	border: none;
 	color: white;
 	background: hsl(198, 100%, 30%);
+}
