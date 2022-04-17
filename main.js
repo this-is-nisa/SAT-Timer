@@ -6,8 +6,7 @@ var hr = document.getElementById('hours');
 var min = document.getElementById('minutes');
 var sec = document.getElementById('seconds');
 
-
-
+var fiveMin = document.getElementById('five');
 
 var startTimer = null; // gotta have this var to later hold the set interval
 
@@ -39,13 +38,17 @@ resetBtn.addEventListener('click', function() {
 
 })
 
+if (fiveMin.checked && hr.value == 0 && min.value == 5 && sec.value == 0) {
+		alert("You have 5 minutes remaining.");
+console.log("it worked"); }
+
 //Timer function
 function timer(){  // what is being repeated
 if(hr.value == 0 && min.value == 0 && sec.value == 0) {
 	hr.value = 0;
 	min.value = 0;
-	sec.value = 0;
-} else if(sec.value != 0) {
+	sec.value = 0;		
+	}else if(sec.value != 0) {
 	sec.value--;
 } else if(min.value != 0 && sec.value == 0){
         sec.value = 59;
@@ -53,7 +56,7 @@ if(hr.value == 0 && min.value == 0 && sec.value == 0) {
 }else if(hr.value != 0 && min.value == 0){
         min.value = 60;
         hr.value--;
-    }
+} 
 return;
 }
 
