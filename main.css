@@ -115,3 +115,20 @@ body {
 	color: white;
 	background: hsl(198, 100%, 30%);
 }
+
+#five-min-rem {
+	width: 200px;
+	height: 70px;
+	margin-left: 16px;
+	border-radius: 10%;
+	align-self: center;
+	border: none;
+	color: white;
+	background: #0088C2;
+	font-family: 'Anek Tamil', sans-serif;
+	font-size: 20px;
+}
+
+#five-min-rem:hover {
+background: hsl(198, 100%, 30%);
+}
