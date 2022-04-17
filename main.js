@@ -18,7 +18,11 @@ startBtn.addEventListener('click', function(){ // addEventListener and 'click' w
         }, 1000);
     }
     startInterval();
+	
+	Startbtn.style.color = 'blue';
 })
+
+
 
 function timer(){
 if(hr.value == 0 && min.value == 0 && sec.value == 0) {
