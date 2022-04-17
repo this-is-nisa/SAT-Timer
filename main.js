@@ -40,7 +40,7 @@ var audioBeep = new Audio('https://github.com/this-is-nisa/SAT-Timer/raw/main/ti
 function endBeep(){
 	if (hr.value == 0 && min.value == 0 && sec.value == 0){
 		audioBeep.play();
-		console.log("almost works");
+		console.log("works");
 	}
 }
 
@@ -50,8 +50,9 @@ resetBtn.addEventListener('click', function() {
 	min.value = 0;
 	sec.value = 0;
 	stopInterval()
-	audioBeep.pause();
 	audioBeep.currentTime = 0;
+	audioBeep.pause();
+	
 
 })
 
