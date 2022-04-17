@@ -86,33 +86,88 @@ body {
 }
 
 #startBtn:hover {
-	width: 50px;
-	height: 50px;
-	margin-left: 16px;
-	border-radius: 50%;
-	border: none;
-	color: white;
+	
 	background: hsl(120, 91%, 30%);
 }
 
 #pauseBtn:hover {
-	width: 50px;
-	height: 50px;
-	margin-left: 16px;
-	border-radius: 50%;
-	align-self: center;
-	border: none;
-	color: white;
+	
 	background: hsl(0, 100%, 30%); }
 	
 #resetBtn:hover {
-	width: 50px;
-	height: 50px;
-	margin-left: 16px;
-	border-radius: 50%;
-	align-self: center;
-	border: none;
-	color: white;
+
 	background: hsl(198, 100%, 30%);
 }
 
+#readingBtn {
+
+	width: 200px;
+	height: 70px;
+	margin-left: 11%;
+	margin-top: 10%;
+	border-radius: 30px;
+	align-self: center;
+	border: none;
+	color: white;
+	background: #0088C2;
+
+}
+#writingBtn {
+
+	width: 200px;
+	height: 70px;
+	margin-left: 11%;
+	margin-top: 10%;
+	border-radius: 30px;
+	align-self: center;
+	border: none;
+	color: white;
+	background: #0088C2;
+
+}
+#noCalcBtn {
+
+	width: 200px;
+	height: 70px;
+	margin-left: 11%;
+	margin-top: 10%;
+	border-radius: 30px;
+	align-self: center;
+	border: none;
+	color: white;
+	background: #0088C2;
+
+}
+#calcBtn {
+
+	width: 200px;
+	height: 70px;
+	margin-left: 11%;
+	margin-top: 10%;
+	border-radius: 30px;
+	align-self: center;
+	border: none;
+	color: white;
+	background: #0088C2;
+
+}
+#readingBtn:hover {
+
+	background: hsl(198, 100%, 30%);
+
+}
+#writingBtn:hover {
+
+	background: hsl(198, 100%, 30%);
+
+}
+#noCalcBtn:hover {
+
+	background: hsl(198, 100%, 30%);
+
+}
+#calcBtn:hover {
+
+	background: hsl(198, 100%, 30%);
+
+}

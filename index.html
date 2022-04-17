@@ -12,7 +12,7 @@
 
 <div class="timer"> 
 
-<span class="timer-part" id="timer-part-hr"><input id="hours" class="time" type="number" max="99" min="0" value="0" ></span> 
+<span class="timer-part" id="timer-part-hr"><input id="hours" class="time" type="number" max="99" min="0" value="0" onchange="if(parseInt(this.value,10)<10)this.value='0'+this.value;"></span> <!--onchange so hr doesnt go over 99 (only inc and dec arrows)-->
 <span class="timer-part" id="colon">:</span> 
 <span class="timer-part" id="timer-part-min"><input id="minutes" class="time" type="number" max="60" min="0" value="0">
 <span class="timer-part" id="colon">:</span> 
@@ -23,7 +23,11 @@
 <button id="resetBtn" class="controls" ><span class="material-icons">restart_alt</span></button>
 </div>
 <div class="extra-funcs">
-<input type="checkbox" id="fiveMin" name="fiveMin" value="five"> <label for="fiveMin">Alert When Five Minutes Remaining</label>
+<input type="checkbox" id="fiveMin" name="fiveMin" value="five"> <label for="fiveMin">Alert When Five Minutes Remaining</label> <br>
+<button id="readingBtn" class="extra-controls">Reading Section</button> <br> 
+<button id="writingBtn" class="extra-controls">Writing and Language Section</button> <br>
+<button id="noCalcBtn" class="extra-controls">Math (No Calculator) Section</button> <br>
+<button id="calcBtn" class="extra-controls">Math (Calculator) Section</button> <br>
 </div>
 <script src='main.js'></script>
 

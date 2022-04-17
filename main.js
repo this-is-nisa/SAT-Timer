@@ -7,6 +7,10 @@ var min = document.getElementById('minutes');
 var sec = document.getElementById('seconds');
 
 var fiveMin = document.getElementById('fiveMin');
+var readingBtn = document.getElementById('readingBtn');
+var writingBtn = document.getElementById('writingBtn');
+var noCalcBtn = document.getElementById('noCalcBtn');
+var calcBtn = document.getElementById('calcBtn');
 
 var startTimer = null; // gotta have this var to later hold the set interval
 
@@ -37,6 +41,36 @@ resetBtn.addEventListener('click', function() {
 	sec.value = 0;
 	stopInterval()
 
+})
+
+// READING
+readingBtn.addEventListener('click', function(){
+	hr.value = 1;
+	min.value = 5;
+	sec.value = 0;
+	stopInterval()
+	console.log("what");
+})
+//WRITING
+writingBtn.addEventListener('click', function(){
+	hr.value = 0;
+	min.value = 35;
+	sec.value = 0;
+	stopInterval()
+})
+//NO CALC
+noCalcBtn.addEventListener('click', function(){
+	hr.value = 0;
+	min.value = 25;
+	sec.value = 0;
+	stopInterval()
+})
+//CALC
+calcBtn.addEventListener('click', function(){
+	hr.value = 0;
+	min.value = 55;
+	sec.value = 0;
+	stopInterval()
 })
 var audio = new Audio('https://github.com/this-is-nisa/SAT-Timer/raw/main/Five-Minutes-Remaining-audio-clip.mp3'); // must have link address in github for audio (tutorial: https://www.youtube.com/watch?v=YrTzh2ZeoHM)
 function fiveMinRem() { 
