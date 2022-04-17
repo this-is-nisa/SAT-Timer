@@ -17,7 +17,7 @@ startBtn.addEventListener('click', function(){ // addEventListener and 'click' w
     function startInterval(){         // defining the button function inside the event listener
         startTimer = setInterval(function() { // setInterval repeats a function with a fixed time delay (1000)
             timer(); // setinterval is repeating the timer function over and over at 1000
-			fiveMinRem();
+			fiveMinRem(); // fiveMinRem repeats -- always listening
         }, 1000);
     }
     startInterval(); // calling function
@@ -38,10 +38,11 @@ resetBtn.addEventListener('click', function() {
 	stopInterval()
 
 })
-
+var audio = new Audio('audio_file.mp3');
 function fiveMinRem() { 
 if (fiveMin.checked && hr.value == 0 && min.value == 5 && sec.value == 0) {
-		alert("You have 5 minutes remaining.");
+
+audio.play();
 console.log("it worked"); }
 return;
  }
