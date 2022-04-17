@@ -38,7 +38,7 @@ resetBtn.addEventListener('click', function() {
 	stopInterval()
 
 })
-var audio = new Audio('Five-Minutes-Remaining-audio-clip.mp3');
+var audio = new Audio('https://github.com/this-is-nisa/SAT-Timer/raw/main/Five-Minutes-Remaining-audio-clip.mp3'); // must have link address in github for audio (tutorial: https://www.youtube.com/watch?v=YrTzh2ZeoHM)
 function fiveMinRem() { 
 if (fiveMin.checked && hr.value == 0 && min.value == 5 && sec.value == 0) {
 
