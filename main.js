@@ -11,6 +11,10 @@ var readingBtn = document.getElementById('readingBtn');
 var writingBtn = document.getElementById('writingBtn');
 var noCalcBtn = document.getElementById('noCalcBtn');
 var calcBtn = document.getElementById('calcBtn');
+var rHalftime = document.getElementById('rHalftime');
+var wHalftime = document.getElementById('wHalftime');
+var ncHalftime = document.getElementById('ncHalftime');
+var cHalftime = document.getElementById('cHalftime');
 
 var startTimer = null; // gotta have this var to later hold the set interval
 
@@ -22,6 +26,10 @@ startBtn.addEventListener('click', function(){ // addEventListener and 'click' w
         startTimer = setInterval(function() { // setInterval repeats a function with a fixed time delay (1000)
             timer(); // setinterval is repeating the timer function over and over at 1000
 			fiveMinRem(); // fiveMinRem repeats -- always listening
+			readingHalftime();
+			writingHalftime();
+			noCalcHalftime();
+			calcHalftime();
 			endBeep();
         }, 1000);
     }
@@ -92,6 +100,42 @@ var audio = new Audio('https://github.com/this-is-nisa/SAT-Timer/raw/main/Five-M
 function fiveMinRem() { 
 if (fiveMin.checked && hr.value == 0 && min.value == 5 && sec.value == 0) {
 audio.play();
+console.log("it worked"); }
+return;
+ }
+
+//READING HALFTIME
+var rAudio = new Audio('https://github.com/this-is-nisa/SAT-Timer/raw/main/32-min-remaining.mp3');
+function readingHalftime() { 
+if (rHalftime.checked && hr.value == 0 && min.value == 32 && sec.value == 30) {
+rAudio.play();
+console.log("it worked"); }
+return;
+ }
+
+//WRITING HALFTIME 
+var wAudio = new Audio('https://github.com/this-is-nisa/SAT-Timer/raw/main/17-min-remaining.mp3');
+function writingHalftime() {
+if (wHalftime.checked && hr.value == 0 && min.value == 17 && sec.value == 30) {
+wAudio.play();
+console.log("it worked"); }
+return;
+ }
+ 
+//NO CALC HALFTIME 
+var ncAudio = new Audio('https://github.com/this-is-nisa/SAT-Timer/raw/main/12-min-remaining.mp3');
+ function noCalcHalftime() { 
+if (ncHalftime.checked && hr.value == 0 && min.value == 12 && sec.value == 30) {
+ncAudio.play();
+console.log("it worked"); }
+return;
+ }
+ 
+//CALC HALFTIME 
+var cAudio = new Audio('https://github.com/this-is-nisa/SAT-Timer/raw/main/27-min-remainingmp3.mp3');
+ function calcHalftime() { 
+if (cHalftime.checked && hr.value == 0 && min.value == 27 && sec.value == 30) {
+cAudio.play();
 console.log("it worked"); }
 return;
  }

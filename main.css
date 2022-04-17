@@ -171,3 +171,8 @@ body {
 	background: hsl(198, 100%, 30%);
 
 }
+.halftime {
+	margin-top: 20px;
+	margin-left: 45px;
+	align=self: center;
+}
