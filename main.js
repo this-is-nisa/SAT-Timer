@@ -19,9 +19,7 @@ startBtn.addEventListener('click', function(){ // addEventListener and 'click' w
     }
     startInterval();
 	
-	Startbtn.style.color = 'blue';
 })
-
 
 
 function timer(){
