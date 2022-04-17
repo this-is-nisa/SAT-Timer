@@ -18,16 +18,16 @@
 <span class="timer-part" id="colon">:</span> 
 <span class="timer-part" id="timer-part-sec"><input id="seconds" class="time" type="number" max="60" min="0" value="0"></span>
 
-<button id="startBtn" class="controls"><span class="material-icons">play_arrow</span></button>
-<button id="pauseBtn" class="controls"><span class="material-icons">pause</span></button>
-<button id="resetBtn" class="controls" ><span class="material-icons">restart_alt</span></button>
+<button id="startBtn" class="controls" onclick="this.disabled=true"><span class="material-icons">play_arrow</span></button> <!-- disabled after click to prevent double clicks -->
+<button id="pauseBtn" class="controls" onclick="startBtn.disabled=false"><span class="material-icons">pause</span></button> <!--reable after another button pressed -->
+<button id="resetBtn" class="controls" onclick="startBtn.disabled=false"><span class="material-icons">restart_alt</span></button>
 </div>
 <div class="extra-funcs">
 <input type="checkbox" id="fiveMin" name="fiveMin" value="five"> <label for="fiveMin">Alert When Five Minutes Remaining</label> <br>
-<button id="readingBtn" class="extra-controls">Reading Section</button> <br> 
-<button id="writingBtn" class="extra-controls">Writing and Language Section</button> <br>
-<button id="noCalcBtn" class="extra-controls">Math (No Calculator) Section</button> <br>
-<button id="calcBtn" class="extra-controls">Math (Calculator) Section</button> <br>
+<button id="readingBtn" class="extra-controls" onclick="startBtn.disabled=false">Reading Section</button> <br> 
+<button id="writingBtn" class="extra-controls" onclick="startBtn.disabled=false">Writing and Language Section</button> <br>
+<button id="noCalcBtn" class="extra-controls" onclick="startBtn.disabled=false">Math (No Calculator) Section</button> <br>
+<button id="calcBtn" class="extra-controls" onclick="startBtn.disabled=false">Math (Calculator) Section</button> <br>
 </div>
 <script src='main.js'></script>
 
