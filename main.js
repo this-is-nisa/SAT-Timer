@@ -15,6 +15,7 @@ var rHalftime = document.getElementById('rHalftime');
 var wHalftime = document.getElementById('wHalftime');
 var ncHalftime = document.getElementById('ncHalftime');
 var cHalftime = document.getElementById('cHalftime');
+var halfTime = document.getElementById('halfTime');
 
 var startTimer = null; // gotta have this var to later hold the set interval
 
@@ -103,6 +104,15 @@ audio.play();
 console.log("it worked"); }
 return;
  }
+
+var rAudio = new Audio('https://github.com/this-is-nisa/SAT-Timer/raw/main/32-min-remaining.mp3');
+function readingHalftime() { 
+if (halfTimealftime.checked && hr.value == 0 && min.value == 32 && sec.value == 30) {
+rAudio.play();
+console.log("halftime"); }
+return;
+ }
+
 
 //READING HALFTIME
 var rAudio = new Audio('https://github.com/this-is-nisa/SAT-Timer/raw/main/32-min-remaining.mp3');
