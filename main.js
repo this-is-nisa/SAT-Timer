@@ -104,15 +104,16 @@ audio.play();
 console.log("it worked"); }
 return;
  }
-
+/*
+//FIXING HALFTIME
 var rAudio = new Audio('https://github.com/this-is-nisa/SAT-Timer/raw/main/32-min-remaining.mp3');
 function readingHalftime() { 
-if (halfTimealftime.checked && hr.value == 0 && min.value == 32 && sec.value == 30) {
+if (halfTimealftime.checked && hr.value = && min.value == 32 && sec.value == 30) {
 rAudio.play();
 console.log("halftime"); }
 return;
  }
-
+*/
 
 //READING HALFTIME
 var rAudio = new Audio('https://github.com/this-is-nisa/SAT-Timer/raw/main/32-min-remaining.mp3');
