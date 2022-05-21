@@ -61,6 +61,7 @@ body {
 	border: none;
 	color: white;
 	background: #10B110;
+	cursor: pointer;
 }
 
 #resetBtn {
@@ -72,6 +73,7 @@ body {
 	border: none;
 	color: white;
 	background: #0088C2;
+	cursor: pointer;
 }
 
 #pauseBtn {
@@ -83,6 +85,7 @@ body {
 	border: none;
 	color: white;
 	background: #C20000;
+	cursor: pointer;
 }
 
 #startBtn:hover {
@@ -110,7 +113,7 @@ body {
 	border: none;
 	color: white;
 	background: #0088C2;
-
+	cursor: pointer;
 }
 #writingBtn {
 
@@ -123,7 +126,7 @@ body {
 	border: none;
 	color: white;
 	background: #0088C2;
-
+	cursor: pointer;
 }
 #noCalcBtn {
 
@@ -136,7 +139,7 @@ body {
 	border: none;
 	color: white;
 	background: #0088C2;
-
+	cursor: pointer;
 }
 #calcBtn {
 
@@ -149,6 +152,7 @@ body {
 	border: none;
 	color: white;
 	background: #0088C2;
+	cursor: pointer;
 
 }
 #readingBtn:hover {
@@ -164,7 +168,7 @@ body {
 #noCalcBtn:hover {
 
 	background: hsl(198, 100%, 30%);
-
+	
 }
 #calcBtn:hover {
 
