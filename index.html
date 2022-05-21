@@ -12,7 +12,7 @@
 
 <div class="timer"> 
 
-<span class="timer-part" id="timer-partHr"><input id="hours" class="time" type="number" max="99" min="0" value="0" step="1" onchange="if(parseInt(this.value,10)<10)this.value='0'+this.value;"></span> <!--onchange so hr doesnt go over 99 (only inc and dec arrows)-->
+<span class="timer-part" id="timer-partHr"><input id="hours" class="time" type="number" max="99" min="0" value="0" step="1" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onchange="if(parseInt(this.value,10)<10)this.value='0'+this.value;"></span> <!--onchange so hr doesnt go over 99 (only inc and dec arrows)-->
 <span class="timer-part" id="colon">:</span> 
 <span class="timer-part" id="timer-part-min"><input id="minutes" class="time" type="number" max="60" min="0" value="0">
 <span class="timer-part" id="colon">:</span> 
