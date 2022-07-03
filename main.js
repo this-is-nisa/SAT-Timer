@@ -45,7 +45,7 @@ pauseBtn.addEventListener('click', function(){
 })
 
 //BEEP WHEN TIMER IS COMPLETE
-var audioBeep = new Audio('https://github.com/this-is-nisa/SAT-Timer/raw/main/timerEndAudio.mp3');
+var audioBeep = new Audio('https://github.com/this-is-nisa/SAT-Timer/raw/main/audio/timerEndAudio.mp3');
 function endBeep(){
 	if (hr.value == 0 && min.value == 0 && sec.value == 0){
 		audioBeep.play();
@@ -97,7 +97,7 @@ calcBtn.addEventListener('click', function(){
 })
 
 //FIVE MINUTES REMAINING FUNCTION
-var audio = new Audio('https://github.com/this-is-nisa/SAT-Timer/raw/main/audio%20files/Five-Minutes-Remaining-audio-clip.mp3'); // must have link address in github for audio (tutorial: https://www.youtube.com/watch?v=YrTzh2ZeoHM)
+var audio = new Audio('https://github.com/this-is-nisa/SAT-Timer/raw/main/audio/Five-Minutes-Remaining-audio-clip.mp3'); // must have link address in github for audio (tutorial: https://www.youtube.com/watch?v=YrTzh2ZeoHM)
 function fiveMinRem() { 
 if (fiveMin.checked && hr.value == 0 && min.value == 5 && sec.value == 0) {
 audio.play();
@@ -106,7 +106,7 @@ return;
  }
 /*
 //FIXING HALFTIME
-var rAudio = new Audio('https://github.com/this-is-nisa/SAT-Timer/raw/main/32-min-remaining.mp3');
+var rAudio = new Audio('https://github.com/this-is-nisa/SAT-Timer/raw/main/audio/32-min-remaining.mp3');
 function readingHalftime() { 
 if (halfTimealftime.checked && hr.value = && min.value == 32 && sec.value == 30) {
 rAudio.play();
@@ -116,7 +116,7 @@ return;
 */
 
 //READING HALFTIME
-var rAudio = new Audio('https://github.com/this-is-nisa/SAT-Timer/raw/main/32-min-remaining.mp3');
+var rAudio = new Audio('https://github.com/this-is-nisa/SAT-Timer/raw/main/audio/32-min-remaining.mp3');
 function readingHalftime() { 
 if (rHalftime.checked && hr.value == 0 && min.value == 32 && sec.value == 30) {
 rAudio.play();
@@ -125,7 +125,7 @@ return;
  }
 
 //WRITING HALFTIME 
-var wAudio = new Audio('https://github.com/this-is-nisa/SAT-Timer/raw/main/17-min-remaining.mp3');
+var wAudio = new Audio('https://github.com/this-is-nisa/SAT-Timer/raw/main/audio/17-min-remaining.mp3');
 function writingHalftime() {
 if (wHalftime.checked && hr.value == 0 && min.value == 17 && sec.value == 30) {
 wAudio.play();
@@ -134,7 +134,7 @@ return;
  }
  
 //NO CALC HALFTIME 
-var ncAudio = new Audio('https://github.com/this-is-nisa/SAT-Timer/raw/main/12-min-remaining.mp3');
+var ncAudio = new Audio('https://github.com/this-is-nisa/SAT-Timer/raw/main/audio/12-min-remaining.mp3');
  function noCalcHalftime() { 
 if (ncHalftime.checked && hr.value == 0 && min.value == 12 && sec.value == 30) {
 ncAudio.play();
@@ -143,7 +143,7 @@ return;
  }
  
 //CALC HALFTIME 
-var cAudio = new Audio('https://github.com/this-is-nisa/SAT-Timer/raw/main/27-min-remainingmp3.mp3');
+var cAudio = new Audio('https://github.com/this-is-nisa/SAT-Timer/raw/main/audio/27-min-remainingmp3.mp3');
  function calcHalftime() { 
 if (cHalftime.checked && hr.value == 0 && min.value == 27 && sec.value == 30) {
 cAudio.play();
