@@ -39,9 +39,10 @@ startBtn.addEventListener('click', function(){ // addEventListener and 'click' w
 })
 
 
-
+// PAUSE
 pauseBtn.addEventListener('click', function(){
 	stopInterval()  // defined at bottom
+	audioBeep.currentTime = 0; // to reset audio
 })
 
 //BEEP WHEN TIMER IS COMPLETE
