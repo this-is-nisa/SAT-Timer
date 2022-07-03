@@ -96,8 +96,8 @@ calcBtn.addEventListener('click', function(){
 	stopInterval()
 })
 
-//FIVE MINUTES REMAING FUNCTION
-var audio = new Audio('https://github.com/this-is-nisa/SAT-Timer/raw/main/Five-Minutes-Remaining-audio-clip.mp3'); // must have link address in github for audio (tutorial: https://www.youtube.com/watch?v=YrTzh2ZeoHM)
+//FIVE MINUTES REMAINING FUNCTION
+var audio = new Audio('https://github.com/this-is-nisa/SAT-Timer/raw/main/audio%20files/Five-Minutes-Remaining-audio-clip.mp3'); // must have link address in github for audio (tutorial: https://www.youtube.com/watch?v=YrTzh2ZeoHM)
 function fiveMinRem() { 
 if (fiveMin.checked && hr.value == 0 && min.value == 5 && sec.value == 0) {
 audio.play();
