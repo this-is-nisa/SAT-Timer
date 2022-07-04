@@ -6,7 +6,7 @@ body {
 }
 
 .timer {
-	font-family: sans:serif;
+	font-family: sans serif;
 	display: inline-block;
 	padding: 24px 32px;
 	border-radius: 30px;
@@ -15,7 +15,7 @@ body {
 }
 
 .extra-funcs {
-	font-family: sans:serif;
+	font-family: sans serif;
 	display: inline-block;
 	padding: 24px 32px;
 	margin-left: 50px;
@@ -39,7 +39,7 @@ body {
 	text-align:center
 	
     }
-}
+
 
 .controls {
 	width: 50px;
@@ -178,5 +178,5 @@ body {
 .halftime {
 	margin-top: 20px;
 	margin-left: 45px;
-	align=self: center;
+	align-self: center;
 }
