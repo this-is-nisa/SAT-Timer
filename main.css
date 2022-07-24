@@ -2,12 +2,17 @@
 body {
 	background: #c1d2d4;
 	margin:24px;
-	
+	padding: 10px;
+	display: flex;
+    justify-content: center;
+
 }
+
 
 .timer {
 	font-family: sans serif;
 	display: inline-block;
+	height: 70px;
 	padding: 24px 32px;
 	border-radius: 30px;
 	background: #eeeeee;
@@ -22,6 +27,7 @@ body {
 	border-radius: 30px;
 	background: #eeeeee;
 	clear:both;
+
 }
 
 .timer-part {
@@ -36,7 +42,7 @@ body {
 	font-size: 50px;
 	border-style: none;
 	font-family: 'Anek Tamil', sans-serif;
-	text-align:center
+	text-align:center;
 	
     }
 
