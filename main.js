@@ -17,16 +17,16 @@ var ncHalftime = document.getElementById('ncHalftime');
 var cHalftime = document.getElementById('cHalftime');
 var halfTime = document.getElementById('halfTime');
 
-var startTimer = null; // gotta have this var to later hold the set interval
+var startTimer = null; // this var later holds the set interval
 
 
 // START
-startBtn.addEventListener('click', function(){ // addEventListener and 'click' will make the button do smth
-
-    function startInterval(){         // defining the button function inside the event listener
-        startTimer = setInterval(function() { // setInterval repeats a function with a fixed time delay (1000)
-            timer(); // setinterval is repeating the timer function over and over at 1000
-			fiveMinRem(); // fiveMinRem repeats -- always listening
+startBtn.addEventListener('click', function(){ // addEventListener and 'click' for button
+	// defining the button function inside the event listener
+    function startInterval(){   
+        startTimer = setInterval(function() { 		// setInterval repeats a function with a fixed time delay (1000)
+           	 	timer(); 			// setinterval is repeating the timer function over and over at 1000
+			fiveMinRem(); 			// fiveMinRem repeats
 			readingHalftime();
 			writingHalftime();
 			noCalcHalftime();
@@ -34,7 +34,7 @@ startBtn.addEventListener('click', function(){ // addEventListener and 'click' w
 			endBeep();
         }, 1000);
     }
-    startInterval(); // calling function
+    startInterval(); // call function
 
 })
 
@@ -101,26 +101,16 @@ calcBtn.addEventListener('click', function(){
 })
 
 //FIVE MINUTES REMAINING FUNCTION
-var audio = new Audio('https://github.com/this-is-nisa/SAT-Timer/raw/main/audio/Five-Minutes-Remaining-audio-clip.mp3'); // must have link address in github for audio (tutorial: https://www.youtube.com/watch?v=YrTzh2ZeoHM)
+var audio = new Audio('https://github.com/this-is-nisa/SAT-Timer/raw/main/audio/Five-Minutes-Remaining-audio-clip.mp3'); // proctor 5-min remaining audio
 function fiveMinRem() { 
 if (fiveMin.checked && hr.value == 0 && min.value == 5 && sec.value == 0) {
 audio.play();
 console.log("it worked"); }
 return;
  }
-/*
-//FIXING HALFTIME
-var rAudio = new Audio('https://github.com/this-is-nisa/SAT-Timer/raw/main/audio/32-min-remaining.mp3');
-function readingHalftime() { 
-if (halfTimealftime.checked && hr.value = && min.value == 32 && sec.value == 30) {
-rAudio.play();
-console.log("halftime"); }
-return;
- }
-*/
 
 //READING HALFTIME
-var rAudio = new Audio('https://github.com/this-is-nisa/SAT-Timer/raw/main/audio/32-min-remaining.mp3');
+var rAudio = new Audio('https://github.com/this-is-nisa/SAT-Timer/raw/main/audio/32-min-remaining.mp3'); // 32-min remaining audio
 function readingHalftime() { 
 if (rHalftime.checked && hr.value == 0 && min.value == 32 && sec.value == 30) {
 rAudio.play();
@@ -129,7 +119,7 @@ return;
  }
 
 //WRITING HALFTIME 
-var wAudio = new Audio('https://github.com/this-is-nisa/SAT-Timer/raw/main/audio/17-min-remaining.mp3');
+var wAudio = new Audio('https://github.com/this-is-nisa/SAT-Timer/raw/main/audio/17-min-remaining.mp3'); // 17-min remaining audio
 function writingHalftime() {
 if (wHalftime.checked && hr.value == 0 && min.value == 17 && sec.value == 30) {
 wAudio.play();
@@ -138,7 +128,7 @@ return;
  }
  
 //NO CALC HALFTIME 
-var ncAudio = new Audio('https://github.com/this-is-nisa/SAT-Timer/raw/main/audio/12-min-remaining.mp3');
+var ncAudio = new Audio('https://github.com/this-is-nisa/SAT-Timer/raw/main/audio/12-min-remaining.mp3'); // 12-min remaining audio
  function noCalcHalftime() { 
 if (ncHalftime.checked && hr.value == 0 && min.value == 12 && sec.value == 30) {
 ncAudio.play();
@@ -147,7 +137,7 @@ return;
  }
  
 //CALC HALFTIME 
-var cAudio = new Audio('https://github.com/this-is-nisa/SAT-Timer/raw/main/audio/27-min-remainingmp3.mp3');
+var cAudio = new Audio('https://github.com/this-is-nisa/SAT-Timer/raw/main/audio/27-min-remainingmp3.mp3'); //  27-min remaining audio
  function calcHalftime() { 
 if (cHalftime.checked && hr.value == 0 && min.value == 27 && sec.value == 30) {
 cAudio.play();
@@ -169,7 +159,7 @@ if(hr.value == 0 && min.value == 0 && sec.value == 0) {
 	sec.value = Math.floor(sec.value % 60);
 	
 } else if (min.value > 60){  // makes min not go over 60
-	hr.value = Math.floor(min.value / 60); // math.floor round to lowest // divide by 60 bc [hr*60 = min] , so get hr by itself [hr = min/60]
+	hr.value = Math.floor(min.value / 60); // MATH: math.floor round to lowest // divide by 60 bc [hr*60 = min] , so get hr by itself [hr = min/60]
 	min.value = Math.floor(min.value % 60); // the min will be the remainder of [min/60]
 	
 } else if (sec.value > 60){
@@ -193,7 +183,7 @@ return;
 
 //Stop Function
 function stopInterval(){
-	clearInterval(startTimer); // clearInterval stops the setinterval repeats
+	clearInterval(startTimer); // clearInterval stops the setinterval repitions
 }
 
 
